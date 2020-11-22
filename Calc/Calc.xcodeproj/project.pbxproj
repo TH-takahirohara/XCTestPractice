@@ -15,6 +15,8 @@
 		188433C2256ACC68009EDA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188433C0256ACC68009EDA67 /* LaunchScreen.storyboard */; };
 		188433CD256ACC6A009EDA67 /* CalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188433CC256ACC6A009EDA67 /* CalcTests.swift */; };
 		188433D8256ACC6A009EDA67 /* CalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188433D7256ACC6A009EDA67 /* CalcUITests.swift */; };
+		188433E9256ACEC7009EDA67 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188433E8256ACEC7009EDA67 /* Calculator.swift */; };
+		188433EE256ACF81009EDA67 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188433ED256ACF81009EDA67 /* CalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		188433D3256ACC6A009EDA67 /* CalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		188433D7256ACC6A009EDA67 /* CalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcUITests.swift; sourceTree = "<group>"; };
 		188433D9256ACC6A009EDA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188433E8256ACEC7009EDA67 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		188433ED256ACF81009EDA67 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				188433BE256ACC68009EDA67 /* Assets.xcassets */,
 				188433C0256ACC68009EDA67 /* LaunchScreen.storyboard */,
 				188433C3256ACC68009EDA67 /* Info.plist */,
+				188433E8256ACEC7009EDA67 /* Calculator.swift */,
 			);
 			path = Calc;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			children = (
 				188433CC256ACC6A009EDA67 /* CalcTests.swift */,
 				188433CE256ACC6A009EDA67 /* Info.plist */,
+				188433ED256ACF81009EDA67 /* CalculatorTests.swift */,
 			);
 			path = CalcTests;
 			sourceTree = "<group>";
@@ -259,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				188433BA256ACC61009EDA67 /* ViewController.swift in Sources */,
+				188433E9256ACEC7009EDA67 /* Calculator.swift in Sources */,
 				188433B6256ACC61009EDA67 /* AppDelegate.swift in Sources */,
 				188433B8256ACC61009EDA67 /* SceneDelegate.swift in Sources */,
 			);
@@ -269,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				188433CD256ACC6A009EDA67 /* CalcTests.swift in Sources */,
+				188433EE256ACF81009EDA67 /* CalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
