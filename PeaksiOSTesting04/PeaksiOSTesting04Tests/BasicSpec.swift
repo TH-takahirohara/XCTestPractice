@@ -7,10 +7,24 @@
 //
 
 import Quick
-import Nimble
 
 class BasicSpec: QuickSpec {
     override func spec() {
-
+        describe("String#isEmpty") {
+            
+            context("when an empty string is given") {
+                
+                it("returns true") {
+                    XCTAssertTrue("".isEmpty)
+                }
+            }
+            
+            context("when string is blank") {
+                
+                it("returns false") {
+                    XCTAssertFalse(" ".isEmpty)
+                }
+            }
+        }
     }
 }
