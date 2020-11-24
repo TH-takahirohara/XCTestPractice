@@ -1,0 +1,6 @@
+framework module Pods_PeaksiOSTesting04_PeaksiOSTesting04UITests {
+  umbrella header "Pods-PeaksiOSTesting04-PeaksiOSTesting04UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
