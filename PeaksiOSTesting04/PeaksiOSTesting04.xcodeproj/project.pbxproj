@@ -16,6 +16,7 @@
 		18DA31F9256D5599005489F1 /* PeaksiOSTesting04Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA31F8256D5599005489F1 /* PeaksiOSTesting04Tests.swift */; };
 		18DA3204256D5599005489F1 /* PeaksiOSTesting04UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA3203256D5599005489F1 /* PeaksiOSTesting04UITests.swift */; };
 		18DA3220256D57F0005489F1 /* BasicSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA321F256D57F0005489F1 /* BasicSpec.swift */; };
+		18DA3225256D5EB0005489F1 /* CounterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA3224256D5EB0005489F1 /* CounterSpec.swift */; };
 		23B8C83219FBFAC8C9F42BC0 /* Pods_PeaksiOSTesting04Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44745C67EE7191C4122CB47B /* Pods_PeaksiOSTesting04Tests.framework */; };
 		259DD35E3AD46A08C98F235A /* Pods_PeaksiOSTesting04.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B7A843FCBEE3AC710D85B4 /* Pods_PeaksiOSTesting04.framework */; };
 		B122EFB8E24779D56E4A2351 /* Pods_PeaksiOSTesting04_PeaksiOSTesting04UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D56E651AFCAB68F3BD8B2E /* Pods_PeaksiOSTesting04_PeaksiOSTesting04UITests.framework */; };
@@ -55,6 +56,7 @@
 		18DA3203256D5599005489F1 /* PeaksiOSTesting04UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaksiOSTesting04UITests.swift; sourceTree = "<group>"; };
 		18DA3205256D5599005489F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18DA321F256D57F0005489F1 /* BasicSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSpec.swift; sourceTree = "<group>"; };
+		18DA3224256D5EB0005489F1 /* CounterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterSpec.swift; sourceTree = "<group>"; };
 		19B7A843FCBEE3AC710D85B4 /* Pods_PeaksiOSTesting04.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeaksiOSTesting04.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D56E651AFCAB68F3BD8B2E /* Pods_PeaksiOSTesting04_PeaksiOSTesting04UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeaksiOSTesting04_PeaksiOSTesting04UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44745C67EE7191C4122CB47B /* Pods_PeaksiOSTesting04Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeaksiOSTesting04Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +137,7 @@
 				18DA31F8256D5599005489F1 /* PeaksiOSTesting04Tests.swift */,
 				18DA31FA256D5599005489F1 /* Info.plist */,
 				18DA321F256D57F0005489F1 /* BasicSpec.swift */,
+				18DA3224256D5EB0005489F1 /* CounterSpec.swift */,
 			);
 			path = PeaksiOSTesting04Tests;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18DA31F9256D5599005489F1 /* PeaksiOSTesting04Tests.swift in Sources */,
+				18DA3225256D5EB0005489F1 /* CounterSpec.swift in Sources */,
 				18DA3220256D57F0005489F1 /* BasicSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
