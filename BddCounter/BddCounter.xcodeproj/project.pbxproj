@@ -14,17 +14,12 @@
 		187883BA256EAC9F0059E262 /* Counter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187883B9256EAC9F0059E262 /* Counter.storyboard */; };
 		187883D1256EB2160059E262 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187883D0256EB2160059E262 /* CounterViewController.swift */; };
 		187883D9256EB3820059E262 /* CounterViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187883D8256EB3820059E262 /* CounterViewControllerTests.swift */; };
+		C8195298F37FAA891116EACF /* Pods_BddCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638C9F7E1540137BA6589F62 /* Pods_BddCounter.framework */; };
+		F78C8C727A200000E4A5D48F /* Pods_BddCounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42ECC2663DE99129597FCB0B /* Pods_BddCounterTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		1878839A256EAC130059E262 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1878837B256EAC0D0059E262 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18788382256EAC0D0059E262;
-			remoteInfo = BddCounter;
-		};
-		187883A5256EAC130059E262 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1878837B256EAC0D0059E262 /* Project object */;
 			proxyType = 1;
@@ -42,11 +37,16 @@
 		18788394256EAC120059E262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18788399256EAC130059E262 /* BddCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BddCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1878839F256EAC130059E262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		187883A4256EAC130059E262 /* BddCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BddCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187883AA256EAC140059E262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187883B9256EAC9F0059E262 /* Counter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Counter.storyboard; sourceTree = "<group>"; };
 		187883D0256EB2160059E262 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		187883D8256EB3820059E262 /* CounterViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewControllerTests.swift; sourceTree = "<group>"; };
+		41B0B2D1719BA614366F1E2B /* Pods-BddCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BddCounter.release.xcconfig"; path = "Target Support Files/Pods-BddCounter/Pods-BddCounter.release.xcconfig"; sourceTree = "<group>"; };
+		42ECC2663DE99129597FCB0B /* Pods_BddCounterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BddCounterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C70D632DDCE74D39121D65F /* Pods-BddCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BddCounter.debug.xcconfig"; path = "Target Support Files/Pods-BddCounter/Pods-BddCounter.debug.xcconfig"; sourceTree = "<group>"; };
+		638C9F7E1540137BA6589F62 /* Pods_BddCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BddCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A8C0378BA4287A4324E48F2 /* Pods-BddCounterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BddCounterTests.debug.xcconfig"; path = "Target Support Files/Pods-BddCounterTests/Pods-BddCounterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FECCF85725A58234AF30BEE2 /* Pods-BddCounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BddCounterTests.release.xcconfig"; path = "Target Support Files/Pods-BddCounterTests/Pods-BddCounterTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8195298F37FAA891116EACF /* Pods_BddCounter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,13 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		187883A1256EAC130059E262 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F78C8C727A200000E4A5D48F /* Pods_BddCounterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +76,8 @@
 				1878839C256EAC130059E262 /* BddCounterTests */,
 				187883A7256EAC130059E262 /* BddCounterUITests */,
 				18788384256EAC0D0059E262 /* Products */,
+				7A52A44FE0212B66D383BC6A /* Pods */,
+				8914FB89AD90E1723D1C0A2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,7 +86,6 @@
 			children = (
 				18788383256EAC0D0059E262 /* BddCounter.app */,
 				18788399256EAC130059E262 /* BddCounterTests.xctest */,
-				187883A4256EAC130059E262 /* BddCounterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +121,27 @@
 			path = BddCounterUITests;
 			sourceTree = "<group>";
 		};
+		7A52A44FE0212B66D383BC6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C70D632DDCE74D39121D65F /* Pods-BddCounter.debug.xcconfig */,
+				41B0B2D1719BA614366F1E2B /* Pods-BddCounter.release.xcconfig */,
+				7A8C0378BA4287A4324E48F2 /* Pods-BddCounterTests.debug.xcconfig */,
+				FECCF85725A58234AF30BEE2 /* Pods-BddCounterTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8914FB89AD90E1723D1C0A2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				638C9F7E1540137BA6589F62 /* Pods_BddCounter.framework */,
+				42ECC2663DE99129597FCB0B /* Pods_BddCounterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +149,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 187883AD256EAC140059E262 /* Build configuration list for PBXNativeTarget "BddCounter" */;
 			buildPhases = (
+				131B2205761A856414474851 /* [CP] Check Pods Manifest.lock */,
 				1878837F256EAC0D0059E262 /* Sources */,
 				18788380256EAC0D0059E262 /* Frameworks */,
 				18788381256EAC0D0059E262 /* Resources */,
@@ -149,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 187883B0256EAC140059E262 /* Build configuration list for PBXNativeTarget "BddCounterTests" */;
 			buildPhases = (
+				2B055A9A2938DE16876756F0 /* [CP] Check Pods Manifest.lock */,
 				18788395256EAC130059E262 /* Sources */,
 				18788396256EAC130059E262 /* Frameworks */,
 				18788397256EAC130059E262 /* Resources */,
+				1FB13139EF557B8A519D4EFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,24 +182,6 @@
 			productName = BddCounterTests;
 			productReference = 18788399256EAC130059E262 /* BddCounterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		187883A3256EAC130059E262 /* BddCounterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 187883B3256EAC140059E262 /* Build configuration list for PBXNativeTarget "BddCounterUITests" */;
-			buildPhases = (
-				187883A0256EAC130059E262 /* Sources */,
-				187883A1256EAC130059E262 /* Frameworks */,
-				187883A2256EAC130059E262 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				187883A6256EAC130059E262 /* PBXTargetDependency */,
-			);
-			name = BddCounterUITests;
-			productName = BddCounterUITests;
-			productReference = 187883A4256EAC130059E262 /* BddCounterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -194,10 +196,6 @@
 						CreatedOnToolsVersion = 12.2;
 					};
 					18788398256EAC130059E262 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 18788382256EAC0D0059E262;
-					};
-					187883A3256EAC130059E262 = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 18788382256EAC0D0059E262;
 					};
@@ -218,7 +216,6 @@
 			targets = (
 				18788382256EAC0D0059E262 /* BddCounter */,
 				18788398256EAC130059E262 /* BddCounterTests */,
-				187883A3256EAC130059E262 /* BddCounterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,14 +238,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		187883A2256EAC130059E262 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		131B2205761A856414474851 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BddCounter-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		1FB13139EF557B8A519D4EFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BddCounterTests/Pods-BddCounterTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BddCounterTests/Pods-BddCounterTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BddCounterTests/Pods-BddCounterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B055A9A2938DE16876756F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BddCounterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1878837F256EAC0D0059E262 /* Sources */ = {
@@ -269,13 +323,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		187883A0256EAC130059E262 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -283,11 +330,6 @@
 			isa = PBXTargetDependency;
 			target = 18788382256EAC0D0059E262 /* BddCounter */;
 			targetProxy = 1878839A256EAC130059E262 /* PBXContainerItemProxy */;
-		};
-		187883A6256EAC130059E262 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 18788382256EAC0D0059E262 /* BddCounter */;
-			targetProxy = 187883A5256EAC130059E262 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -421,6 +463,7 @@
 		};
 		187883AE256EAC140059E262 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C70D632DDCE74D39121D65F /* Pods-BddCounter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,6 +483,7 @@
 		};
 		187883AF256EAC140059E262 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B0B2D1719BA614366F1E2B /* Pods-BddCounter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +503,7 @@
 		};
 		187883B1256EAC140059E262 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8C0378BA4287A4324E48F2 /* Pods-BddCounterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -481,6 +526,7 @@
 		};
 		187883B2256EAC140059E262 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FECCF85725A58234AF30BEE2 /* Pods-BddCounterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,46 +544,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BddCounter.app/BddCounter";
-			};
-			name = Release;
-		};
-		187883B4256EAC140059E262 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CM295DQ64D;
-				INFOPLIST_FILE = BddCounterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = takahiro.hara.BddCounterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BddCounter;
-			};
-			name = Debug;
-		};
-		187883B5256EAC140059E262 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CM295DQ64D;
-				INFOPLIST_FILE = BddCounterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = takahiro.hara.BddCounterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BddCounter;
 			};
 			name = Release;
 		};
@@ -567,15 +573,6 @@
 			buildConfigurations = (
 				187883B1256EAC140059E262 /* Debug */,
 				187883B2256EAC140059E262 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		187883B3256EAC140059E262 /* Build configuration list for PBXNativeTarget "BddCounterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				187883B4256EAC140059E262 /* Debug */,
-				187883B5256EAC140059E262 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
