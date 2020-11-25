@@ -11,6 +11,14 @@ import XCTest
 class CounterViewControllerTests: XCTestCase {
 
     func testIncrementButton() {
+        let vc = CounterViewController.make()
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
         
+        XCTAssertEqual(vc.countLabel.text, "0")
+        
+        vc.incrementButton.sendActions(for: .touchUpInside)
+        XCTAssertEqual(vc.countLabel.text, "1")
     }
 }
