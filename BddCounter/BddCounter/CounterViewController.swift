@@ -13,6 +13,11 @@ class CounterViewController: UIViewController {
     @IBOutlet weak var decrementButton: UIButton!
     @IBOutlet weak var incrementButton: UIButton!
     
+    static func make() -> CounterViewController {
+        let storyboard = UIStoryboard(name: "Counter", bundle: nil)
+        return storyboard.instantiateInitialViewController() as! CounterViewController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

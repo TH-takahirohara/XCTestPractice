@@ -15,6 +15,7 @@
 		187883A9256EAC130059E262 /* BddCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187883A8256EAC130059E262 /* BddCounterUITests.swift */; };
 		187883BA256EAC9F0059E262 /* Counter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187883B9256EAC9F0059E262 /* Counter.storyboard */; };
 		187883D1256EB2160059E262 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187883D0256EB2160059E262 /* CounterViewController.swift */; };
+		187883D9256EB3820059E262 /* CounterViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187883D8256EB3820059E262 /* CounterViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		187883AA256EAC140059E262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187883B9256EAC9F0059E262 /* Counter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Counter.storyboard; sourceTree = "<group>"; };
 		187883D0256EB2160059E262 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		187883D8256EB3820059E262 /* CounterViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				1878839D256EAC130059E262 /* BddCounterTests.swift */,
 				1878839F256EAC130059E262 /* Info.plist */,
+				187883D8256EB3820059E262 /* CounterViewControllerTests.swift */,
 			);
 			path = BddCounterTests;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187883D9256EB3820059E262 /* CounterViewControllerTests.swift in Sources */,
 				1878839E256EAC130059E262 /* BddCounterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
