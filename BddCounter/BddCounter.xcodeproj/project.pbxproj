@@ -14,6 +14,7 @@
 		1878839E256EAC130059E262 /* BddCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878839D256EAC130059E262 /* BddCounterTests.swift */; };
 		187883A9256EAC130059E262 /* BddCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187883A8256EAC130059E262 /* BddCounterUITests.swift */; };
 		187883BA256EAC9F0059E262 /* Counter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187883B9256EAC9F0059E262 /* Counter.storyboard */; };
+		187883D1256EB2160059E262 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187883D0256EB2160059E262 /* CounterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		187883A8256EAC130059E262 /* BddCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BddCounterUITests.swift; sourceTree = "<group>"; };
 		187883AA256EAC140059E262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187883B9256EAC9F0059E262 /* Counter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Counter.storyboard; sourceTree = "<group>"; };
+		187883D0256EB2160059E262 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				18788388256EAC0D0059E262 /* SceneDelegate.swift */,
 				1878838F256EAC120059E262 /* Assets.xcassets */,
 				18788391256EAC120059E262 /* LaunchScreen.storyboard */,
+				187883D0256EB2160059E262 /* CounterViewController.swift */,
 				187883B9256EAC9F0059E262 /* Counter.storyboard */,
 				18788394256EAC120059E262 /* Info.plist */,
 			);
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187883D1256EB2160059E262 /* CounterViewController.swift in Sources */,
 				18788387256EAC0D0059E262 /* AppDelegate.swift in Sources */,
 				18788389256EAC0D0059E262 /* SceneDelegate.swift in Sources */,
 			);

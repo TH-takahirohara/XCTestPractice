@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Counter View Controller-->
         <scene sceneID="9g3-vM-s2G">
             <objects>
-                <viewController id="gIn-jW-phJ" sceneMemberID="viewController">
+                <viewController id="gIn-jW-phJ" customClass="CounterViewController" customModule="BddCounter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Gm-gg-h1A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,6 +52,11 @@
                             <constraint firstItem="Vbb-1m-99I" firstAttribute="bottom" secondItem="Tex-zg-9Mo" secondAttribute="bottom" constant="200" id="ydD-bt-mUo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="1Hf-i7-gf9" id="qWu-zf-W64"/>
+                        <outlet property="decrementButton" destination="aBl-lb-HLs" id="zVQ-4u-9bJ"/>
+                        <outlet property="incrementButton" destination="Tex-zg-9Mo" id="nj0-Xu-iUn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BbW-hd-0Fj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
