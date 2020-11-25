@@ -11,8 +11,6 @@
 		18788389256EAC0D0059E262 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18788388256EAC0D0059E262 /* SceneDelegate.swift */; };
 		18788390256EAC120059E262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1878838F256EAC120059E262 /* Assets.xcassets */; };
 		18788393256EAC120059E262 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18788391256EAC120059E262 /* LaunchScreen.storyboard */; };
-		1878839E256EAC130059E262 /* BddCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878839D256EAC130059E262 /* BddCounterTests.swift */; };
-		187883A9256EAC130059E262 /* BddCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187883A8256EAC130059E262 /* BddCounterUITests.swift */; };
 		187883BA256EAC9F0059E262 /* Counter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187883B9256EAC9F0059E262 /* Counter.storyboard */; };
 		187883D1256EB2160059E262 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187883D0256EB2160059E262 /* CounterViewController.swift */; };
 		187883D9256EB3820059E262 /* CounterViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187883D8256EB3820059E262 /* CounterViewControllerTests.swift */; };
@@ -43,10 +41,8 @@
 		18788392256EAC120059E262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18788394256EAC120059E262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18788399256EAC130059E262 /* BddCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BddCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1878839D256EAC130059E262 /* BddCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BddCounterTests.swift; sourceTree = "<group>"; };
 		1878839F256EAC130059E262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187883A4256EAC130059E262 /* BddCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BddCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		187883A8256EAC130059E262 /* BddCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BddCounterUITests.swift; sourceTree = "<group>"; };
 		187883AA256EAC140059E262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187883B9256EAC9F0059E262 /* Counter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Counter.storyboard; sourceTree = "<group>"; };
 		187883D0256EB2160059E262 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
@@ -115,9 +111,8 @@
 		1878839C256EAC130059E262 /* BddCounterTests */ = {
 			isa = PBXGroup;
 			children = (
-				1878839D256EAC130059E262 /* BddCounterTests.swift */,
-				1878839F256EAC130059E262 /* Info.plist */,
 				187883D8256EB3820059E262 /* CounterViewControllerTests.swift */,
+				1878839F256EAC130059E262 /* Info.plist */,
 			);
 			path = BddCounterTests;
 			sourceTree = "<group>";
@@ -125,7 +120,6 @@
 		187883A7256EAC130059E262 /* BddCounterUITests */ = {
 			isa = PBXGroup;
 			children = (
-				187883A8256EAC130059E262 /* BddCounterUITests.swift */,
 				187883AA256EAC140059E262 /* Info.plist */,
 			);
 			path = BddCounterUITests;
@@ -272,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				187883D9256EB3820059E262 /* CounterViewControllerTests.swift in Sources */,
-				1878839E256EAC130059E262 /* BddCounterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187883A9256EAC130059E262 /* BddCounterUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
