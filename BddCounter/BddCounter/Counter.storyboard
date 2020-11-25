@@ -39,6 +39,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="tapIncrementButton:" destination="gIn-jW-phJ" eventType="touchUpInside" id="TF6-N5-lOv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vbb-1m-99I"/>
