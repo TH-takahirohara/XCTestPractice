@@ -5,20 +5,34 @@
 //  Created by 原昂大 on 2020/11/26.
 //
 
-import XCTest
+import Quick
+import Nimble
 @testable import BddCounter
 
-class CounterViewControllerTests: XCTestCase {
-
-    func testIncrementButton() {
-        let vc = CounterViewController.make()
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = vc
-        window.makeKeyAndVisible()
+class CounterViewControllerSpec: QuickSpec {
+    override func spec() {
+        var vc: CounterViewController!
         
-        XCTAssertEqual(vc.countLabel.text, "0")
+        beforeEach {
+            vc = CounterViewController.make()
+            let window = UIWindow(frame: UIScreen.main.bounds)
+            window.rootViewController = vc
+            window.makeKeyAndVisible()
+        }
         
-        vc.incrementButton.sendActions(for: .touchUpInside)
-        XCTAssertEqual(vc.countLabel.text, "1")
+        describe("初期表示") {
+            it("カウントが「0」であること") {
+                expect(vc.countLabel.text).to(equal("0"))
+            }
+        }
+        
+        describe("「+」ボタンをタップ") {
+            context("現在値が「0」") {
+                it("カウンタが「1」に増えること") {
+                    vc.incrementButton.sendActions(for: .touchUpInside)
+                    expect(vc.countLabel.text).to(equal("1"))
+                }
+            }
+        }
     }
 }
