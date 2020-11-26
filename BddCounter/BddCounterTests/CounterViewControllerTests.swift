@@ -10,8 +10,10 @@ import Nimble
 @testable import BddCounter
 
 extension UIButton {
-    func tap() {
-        self.sendActions(for: .touchUpInside)
+    func tap(repeat: Int = 1) {
+        for _ in 1...`repeat` {
+            self.sendActions(for: .touchUpInside)
+        }
     }
 }
 
@@ -34,6 +36,10 @@ class CounterViewControllerSpec: QuickSpec {
             it("「-」ボタンが非活性であること") {
                 expect(vc.decrementButton.isEnabled).to(beFalse())
             }
+            
+            it("「+」ボタンが活性であること") {
+                expect(vc.incrementButton.isEnabled).to(beTrue())
+            }
         }
         
         describe("「+」ボタンをタップ") {
@@ -48,12 +54,23 @@ class CounterViewControllerSpec: QuickSpec {
                     expect(vc.decrementButton.isEnabled).to(beTrue())
                 }
             }
+            
+            context("上限値に達した場合") {
+                beforeEach {
+                    vc.incrementButton.tap(repeat: 10)
+                }
+                
+                it("上限値なので「+」ボタンが非活性になること") {
+                    expect(vc.countLabel.text).to(equal("10"))
+                    expect(vc.incrementButton.isEnabled).to(beFalse())
+                }
+            }
         }
         
         describe("「-」ボタンをタップ") {
             context("現在値が「1」") {
                 beforeEach {
-                    vc.incrementButton.sendActions(for: .touchUpInside)
+                    vc.incrementButton.tap()
                 }
                 
                 it("カウンタが「0」に減ること") {
@@ -64,6 +81,19 @@ class CounterViewControllerSpec: QuickSpec {
                 it("下限値になるので「-」ボタンが非活性になること") {
                     vc.decrementButton.tap()
                     expect(vc.decrementButton.isEnabled).to(beFalse())
+                }
+            }
+            
+            context("現在値が「10」（上限値）") {
+                beforeEach {
+                    vc.incrementButton.tap(repeat: 10)
+                    vc.decrementButton.tap()
+                }
+                it("カウンタが「9」に減ること") {
+                    expect(vc.countLabel.text).to(equal("9"))
+                }
+                it("上限値でなくなるので「+」ボタンが活性になること") {
+                    expect(vc.incrementButton.isEnabled).to(beTrue())
                 }
             }
         }
