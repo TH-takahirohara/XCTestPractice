@@ -25,6 +25,11 @@ class CounterViewController: UIViewController {
         updateView()
     }
     
+    @IBAction func tapDecrementButton(_ sender: Any) {
+        count -= 1
+        updateView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateView()
