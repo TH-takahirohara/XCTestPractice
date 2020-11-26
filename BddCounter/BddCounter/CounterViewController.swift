@@ -9,8 +9,8 @@ import UIKit
 
 class Counter {
     private(set) var count: Int
-    var isNotLowerLimit: Bool { return count > 0 }
-    var isNotUpperLimit: Bool { return count < 10}
+    var isLowerLimit: Bool { return count == 0 }
+    var isUpperLimit: Bool { return count == 10}
     
     init(count: Int = 0) {
         self.count = count
@@ -55,7 +55,7 @@ class CounterViewController: UIViewController {
     
     private func updateView() {
         countLabel.text = "\(counter.count)"
-        decrementButton.isEnabled = counter.isNotLowerLimit
-        incrementButton.isEnabled = counter.isNotUpperLimit
+        decrementButton.isEnabled = !counter.isLowerLimit
+        incrementButton.isEnabled = !counter.isUpperLimit
     }
 }
