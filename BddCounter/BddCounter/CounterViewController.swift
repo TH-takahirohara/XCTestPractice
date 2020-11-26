@@ -37,5 +37,6 @@ class CounterViewController: UIViewController {
     
     private func updateView() {
         countLabel.text = "\(count)"
+        decrementButton.isEnabled = count > 0
     }
 }

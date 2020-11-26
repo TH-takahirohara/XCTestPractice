@@ -30,6 +30,10 @@ class CounterViewControllerSpec: QuickSpec {
             it("カウントが「0」であること") {
                 expect(vc.countLabel.text).to(equal("0"))
             }
+            
+            it("「-」ボタンが非活性であること") {
+                expect(vc.decrementButton.isEnabled).to(beFalse())
+            }
         }
         
         describe("「+」ボタンをタップ") {
@@ -37,6 +41,11 @@ class CounterViewControllerSpec: QuickSpec {
                 it("カウンタが「1」に増えること") {
                     vc.incrementButton.tap()
                     expect(vc.countLabel.text).to(equal("1"))
+                }
+                
+                it("下限値でなくなるので「-」ボタンが活性になること") {
+                    vc.incrementButton.tap()
+                    expect(vc.decrementButton.isEnabled).to(beTrue())
                 }
             }
         }
@@ -50,6 +59,11 @@ class CounterViewControllerSpec: QuickSpec {
                 it("カウンタが「0」に減ること") {
                     vc.decrementButton.tap()
                     expect(vc.countLabel.text).to(equal("0"))
+                }
+                
+                it("下限値になるので「-」ボタンが非活性になること") {
+                    vc.decrementButton.tap()
+                    expect(vc.decrementButton.isEnabled).to(beFalse())
                 }
             }
         }
