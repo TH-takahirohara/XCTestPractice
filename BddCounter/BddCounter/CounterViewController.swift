@@ -11,6 +11,12 @@ protocol CounterStorage {
     func save(_ count: Int)
 }
 
+class CounterStorageDefaults: CounterStorage {
+    func save(_ count: Int) {
+        UserDefaults.standard.setValue(count, forKey: "count")
+    }
+}
+
 class CounterStorageMock: CounterStorage {
     var latestSaveCount: Int?
     
@@ -21,23 +27,23 @@ class CounterStorageMock: CounterStorage {
 
 class Counter {
     private(set) var count: Int
-    private let counterStorage: CounterStorage!
+    private let counterStorage: CounterStorage
     var isLowerLimit: Bool { return count == 0 }
     var isUpperLimit: Bool { return count == 10}
     
-    init(count: Int = 0, counterStorage: CounterStorage? = nil) {
+    init(count: Int = 0, counterStorage: CounterStorage = CounterStorageDefaults()) {
         self.count = count
         self.counterStorage = counterStorage
     }
     
     func increment() {
         count += 1
-        counterStorage?.save(count)
+        counterStorage.save(count)
     }
     
     func decrement() {
         count -= 1
-        counterStorage?.save(count)
+        counterStorage.save(count)
     }
 }
 
